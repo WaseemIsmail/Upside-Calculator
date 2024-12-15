@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 import "./App.css";
-import CFALogo from "./assets/CFA.png";
-import WindForceLogo from "./assets/WindForce.png";
+// import CFALogo from "./assets/CFA.png";
+// import WindForceLogo from "./assets/WindForce.png";
 import videoBackground from "./assets/background.mp4";
 import ProjectVideo from "./assets/project_video.mp4"
 import { useNavigate } from "react-router-dom"; // Import useNavigate
@@ -74,14 +74,14 @@ function Home() {
         <source src={videoBackground} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <header>
+      {/* <header>
         <div className="logo">
           <img src={CFALogo} alt="CFA Society Sri Lanka" />
         </div>
         <div className="logo">
           <img src={WindForceLogo} alt="WindForce Logo" />
         </div>
-      </header>
+      </header> */}
 
       <div className="form-container">
         <h2  className="bold">Enter Details</h2>
@@ -125,7 +125,7 @@ function Home() {
             className="w-40 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
             onClick={() => toggleDropdown("dropdown1")}
           >
-            Financial Statement
+            Financial Statements
           </button>
           {activeDropdown === "dropdown1" && (
             <div className="absolute mt-1 w-40 bg-gray-100 border border-gray-300 rounded shadow-lg">
